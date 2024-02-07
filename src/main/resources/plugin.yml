@@ -1,0 +1,4 @@
+name: HNKeepInventory
+version: '${version}'
+main: heyblock0712.hnkeepinventory.HNKeepInventory
+api-version: '1.20'
