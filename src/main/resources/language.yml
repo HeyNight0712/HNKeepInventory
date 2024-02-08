@@ -1,0 +1,35 @@
+title: "&f[&6死亡保護&f]&r "
+
+mode:
+  default:
+    enable: "&7保護已激活&r"
+    disable: "&c無保護狀態下 物品經驗將掉落地面&r"
+
+  random:
+    # {playerName} - 玩家ID  EX:<此行沒有顏色標示>
+    system: "玩家 {playerName} 已重生 將歸還保留物品 該檔案已刪除!"
+    # {droppedItemsCount} - 掉落物品數
+    # {droppedExpCount} - 掉落經驗值數
+    death: "&c你在死亡時掉落了 &d{droppedItemsCount} &c個物品和 &d{droppedExpCount}&c exp&r"
+    # {itemCount} - 保留物品數
+    respawn: "&7成功保護 &a{itemCount} &7物品數量 將歸放入玩家背包"
+
+  vault:
+    # {amount} - 成本
+    # {balance} - 剩餘餘額
+    enable: "&7保護已激活 扣除 &c{amount} &7餘額: {balance}&r"
+    disable: "&c你沒有足夠的餘額來保護裝備 需要 &c{amount}&r"
+    error: "&c無法扣除保護費用 請聯繫管理員!&r"
+
+  bounty:
+    designing: "&7設計中 此功能將不起任何作用"
+
+commands:
+  keepInventory:
+    disable: "&c當前已被全局模式: &6{mode} &c覆蓋&r"
+    reload: "&7Config 已重新加載&r"
+    noPermission: "&c你沒有足夠的權限運行"
+    notaPlayer: "&c只有玩家才可以使用此命令&r"
+    # {keepInventory} - 個人設定 Ture/False
+    toggle: "&7你的防噴設定更改成: &6{keepInventory}&r"
+    error: "&c更改設置時發生錯誤&r"

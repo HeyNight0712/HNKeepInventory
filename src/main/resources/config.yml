@@ -1,0 +1,28 @@
+global:
+  # 設置
+  # amount: <int>
+  #
+  # 當前完成 default, random, disable, protect, vault
+  # default - 默認看玩家個人設置
+  # random - 隨機噴
+  # disable - 無死亡保護
+  # bounty - 將懲罰 金額 轉移至 擊殺者身上 (適用 pvpDeathMode):
+  # protect - 保護
+  # vault - 經濟系統 (需要 vault 和 支持經濟插件 沒有將使用默認)
+  # 當輸入非上面 模式 將使用預設
+  #
+  # bounty: <0~100>%
+  deathMode: default
+  pvpDeathMode: default
+
+  mode:
+    random:
+      chance: 50 # 機率 0~100 ex: 保留 50% 物品
+
+    vault:
+      amount: 5 # 0 > amount 將使用預設值
+
+    # protect 保護
+    # default - 默認看玩家個人設置
+    # bounty - 將懲罰 金額 轉移至 擊殺者身上 (適用 pvpDeathMode):
+    # disable - 禁用
